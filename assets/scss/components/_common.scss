@@ -1,27 +1,35 @@
 
 body {
-    color: #324148;
-    font-family: $font-body;
-    font-weight: $font-normal;
+    // color: #324148;
+    // font-family: $font-body;
+    // font-weight: $font-normal;
 }
 
 p::-moz-selection{
-    background-color:$default;
+    background-color:$primary;
     color:$white;
 }
 p::selection{
-    background-color:$default;
+    background-color:$primary;
     color:$white;
 }
 ::-moz-selection{
-    background-color:$default;
+    background-color:$primary;
     color:$white;
 }
 ::selection{
-    background-color:$default;
+    background-color:$primary;
     color:$white;
 }
 
-.h-100vh {
-    height: 100vh;
+
+
+// settings modal 
+#modalSettings {
+    .close {
+        position: absolute;
+        top: -6px;
+        right: 0;
+    }
 }
+// settings modal ends

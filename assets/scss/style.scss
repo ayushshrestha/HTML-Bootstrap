@@ -8,8 +8,12 @@
 @import 'module/button';
 @import 'module/image';
 @import 'module/theme';
+@import 'module/icon';
+@import 'module/menu';
 
 
-body {
-    background-color: red;
-}
+@import 'components/common';
+@import 'components/home/header';
+
+
+

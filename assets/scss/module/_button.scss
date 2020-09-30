@@ -1,13 +1,41 @@
-
+button {    
+    &:focus {
+        outline: none;
+    }
+}
 
 .btn {
-    padding-left: 3em;
-    padding-right: 3em;
+    // padding-left: 3em;
+    // padding-right: 3em;
     &-default {
         background-color: $default;
         &:hover {
             background-color: $black;
         }
     }
+    &-primary {
+        background-color: $primary;
+        border-color:$primary;
+        &:hover {
+            background-color: $black;
+            border-color:$black;
+        }
+    }
+    &-grey {
+        background-color: $grey;
+        &:hover {
+            background-color: $primary;
+        }
+    }
 }
 
+
+
+// border radius each function
+
+$borderRadiusList: 3 23;
+@each $borderRadius in $borderRadiusList{
+    .border-radius-#{$borderRadius}{
+        border-radius:#{$borderRadius}px;     
+   }   
+}

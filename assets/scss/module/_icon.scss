@@ -1,7 +1,9 @@
-$iconlist: facebook twitter instagram envelope pin phone;
+$iconlist: settings facebook twitter instagram youtube whatsapp viber;
 @each $iconSvg in $iconlist{
     .icon-#{$iconSvg}{
-        background: url("../images/icon/svg/#{$iconSvg}.svg") no-repeat center center;
+        background-image: url("../images/icon/#{$iconSvg}.svg"); 
+        background-repeat: no-repeat;
+        background-position: center center;
         background-size: 100% 100%;
         display: block;
         width: 100%;
@@ -20,8 +22,8 @@ $iconlist: facebook twitter instagram envelope pin phone;
 .icon {
     display: inline-block;
     &-xs {
-        width: 18px;
-        height: 15px;
+        width: 11px;
+        height: 12px;
     }
     &-md {
         width: 35px;
