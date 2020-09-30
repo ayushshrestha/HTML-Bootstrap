@@ -1,0 +1,16 @@
+
+.navbar-brand {
+    @include media-breakpoint-up(md) {
+        padding-right: 7%;
+    }
+}
+
+// mobile button hamburger
+.navbar-light .navbar-toggler {
+    border:none;
+}
+
+.btn-settings {
+    width: 28px;
+    height: 28px;
+}
